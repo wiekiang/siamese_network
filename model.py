@@ -193,7 +193,7 @@ def display_images(left, right, predictions, labels, title, n):
     right = np.swapaxes(right, 0, 1)
     right = np.reshape(right, [28, 28*n])
     plt.plot(right)
-    plt.savefig('result.png')
+    plt.savefig('results.png')
 
 
 y_pred_train = np.squeeze(y_pred_train)
